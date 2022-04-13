@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky-shop recruitment task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="wrapper__header">
+        <h1>Lista produktów:</h1>
+        <label>
+            Filtruj:
+            <select class="filter">
+                <option value="">Wszystko</option>
+                <option value="recommended">Polecane</option>
+                <option value="bestseller">Bestsellery</option>
+                <option value="new">Nowości</option>
+                <option value="promotion">Promocja</option>
+                <option value="saleout">Wyprzedaż</option>
+            </select>
+        </label>
+    </header>
+    <main class="wrapper__main js-content">
+        <div class="products"></div>    
+        <template class="product-temp">
+           <div class="product">
+                <div class="product__img">
+                    <img src="https://picsum.photos/280/325" alt="product">
+                </div>
+                <div class="product__description">
+                    <p class="product__name"></p>
+                    <div class="product__prices">
+                        <hr>
+                        <p class="product__actual_price"></p>
+                        <p class="product__old_price"></p>
+                    </div>
+                    <ul class="product__statuses">
+                    </ul>
+                    <p class="product__discount"></p>
+                </div>
+            </div>
+        </template>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

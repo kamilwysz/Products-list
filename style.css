@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 30px
+}
+main {
+    margin-top: 20px;
+}
+hr {
+    background-color: #8BBB2E;
+    border: none;
+    color: #8BBB2E;
+    height: 2px;
+    margin:0 auto;
+    width: 20%;
+}
+html {
+    font-family: 'Raleway';
+}
+.product {
+    border: 1px solid gray;
+    flex: 1;
+    height: 480px;
+    margin: 10px;
+    max-width: 290px;
+    min-width: 250px;
+    position: relative;
+    text-align: center;
+}
+.product__actual_price {
+    font-size: 25px;
+    margin: 5px;
+}
+.product__description {
+    display: flex;
+    flex-direction: column;
+    height: 155px;
+    justify-content: space-evenly;
+    padding:0 10px
+}
+.product__discount {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    top: 15px;
+    width: 40px;
+}
+.product__img {
+    height: 325px;
+}
+.product__img > img {
+    width: 100%;
+}
+.product__name {
+    height: 35px;
+    margin-top: 10px;
+}
+.product__old_price {
+    color: gray;
+    font-weight: 400;
+    height: 19px;
+    text-decoration: line-through;
+}
+.product__prices {
+    margin-top: 10px;
+}
+.product__statuses {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.product__statuses > li {
+    background-color: #8BBB2E;
+    border-radius: 5px;
+    color: white;
+    font-size: 11px;
+    margin: 8px;
+    padding: 7px;
+    width: max-content;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-weight: 800;
+}
+select {
+    margin-top: 10px;
+}
+ul {
+    list-style: none;
+}
